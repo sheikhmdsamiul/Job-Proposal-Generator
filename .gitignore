@@ -1,0 +1,62 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+envfile/
+
+# IDE / Editor
+.vscode/
+.vscode-test/
+.idea/
+*.sublime-project
+*.sublime-workspace
+.DS_Store
+Thumbs.db
+
+# Logs
+logs/
+*.log
+
+# Environment / secrets
+.env
+*.env.local
+
+# Chroma vector store persistence
+chroma_db/
+**/chroma_db/
+**/index/*
+
+# Cache / artifacts
+.cache/
+.mypy_cache/
+.pytest_cache/
+.pyre/
+.pytype/
+.tox/
+.coverage
+htmlcov/
+coverage.xml
+pytestdebug.log
+
+# Notebooks
+.ipynb_checkpoints/
+
+# OS files
+Desktop.ini
+
+# Local data
+**/data/**
+
+# Node if any sample frontend added later
+node_modules/

@@ -1,0 +1,8 @@
+fastapi
+uvicorn[standard]
+langchain
+langchain-community
+faiss-cpu
+pydantic
+python-dotenv
+requests
