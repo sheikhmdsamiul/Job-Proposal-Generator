@@ -12,11 +12,11 @@ from app.models import FreelancerProfile
 
 class VectorStoreService:
     def __init__(self):
-        # Use Ollama local embeddings (ensure ollama is running and model is pulled)
+        # Ollama local embeddings 
         model_name = os.getenv("OLLAMA_EMBED_MODEL", "nomic-embed-text")
         self.embeddings = OllamaEmbeddings(model=model_name)
 
-        # Keep the env var names for compatibility; the directory will store FAISS files.
+        # the directory will store FAISS files.
         self.collection_name = os.getenv("CHROMA_COLLECTION", "freelancer_profiles")
         self.persist_directory = os.getenv("CHROMA_DIR", "./chroma_db")
         os.makedirs(self.persist_directory, exist_ok=True)
