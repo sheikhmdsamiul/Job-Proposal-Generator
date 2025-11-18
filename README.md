@@ -103,11 +103,11 @@ Troubleshooting
 	venv used by your editor has `langchain` and `langchain-ollama` installed.
 
 Development notes
-- Vector store implementation: `swiftme-mini/app/services/vector_store.py` — uses FAISS via
+- Vector store implementation: `app/services/vector_store.py` — uses FAISS via
 	`langchain` wrappers; embeddings come from Ollama via `OllamaEmbeddings`.
-- Job analyzer: `swiftme-mini/app/services/job_analyzer.py` — extracts structured job requirements
+- Job analyzer: `app/services/job_analyzer.py` — extracts structured job requirements
 	using Ollama and a Pydantic output parser.
-- Proposal generator: `swiftme-mini/app/services/proposal_generator.py` — builds a prompt, calls Ollama,
+- Proposal generator: `app/services/proposal_generator.py` — builds a prompt, calls Ollama,
 	and returns a `GeneratedProposal` object (contains `confidence_score` and `matched_skills`).
 
 Notes about the migration from Chroma → FAISS
@@ -120,6 +120,3 @@ Next steps / ideas
 - Add a lightweight web UI to compose job postings and view generated proposals.
 - Add profile versioning and support for multiple profiles/collections.
 
-Contact
-If you want me to: start the server here, run `example_usage.py` and capture logs, or add a small
-UI to the repo — tell me which and I'll proceed.
